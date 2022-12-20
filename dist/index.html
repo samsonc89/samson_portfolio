@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
+    <title>Samson Cheung</title>
+  <script defer src="main.bundle.js"></script></head>
   <body>
     <div class="main-wrapper">
       <div class="navbar">
@@ -29,18 +29,6 @@
           </div>
           <div id="projects">
             <h1>Projects</h1>
-            <div class="project-card">
-              <div class="project-thumbnail">
-                <img src="" alt="" class="thumbnail-image">
-              </div>
-              <h3 class="project-title"></h3>
-              <p class="project-description"></p>
-              <ul class="project-stack"></ul>
-              <div class="icon-wrapper">
-                <div class="git-icon"></div>
-                <div class="live-icon"></div>
-              </div>
-            </div>
           </div>
           <div id="about">
             <h1>About</h1>
@@ -49,6 +37,15 @@
       </div>
       <div class="footer">
     </div>
-    
+    <!-- Particles.js for hero section -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+    <script>
+      particlesJS.load('particles-js', './particles.json', function(){
+        console.log("particles.josn loaded...")
+      })
+    </script>
   </body>
 </html>
