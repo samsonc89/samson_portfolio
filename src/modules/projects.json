@@ -1,0 +1,29 @@
+[
+   {
+      "thumbnail": "imageThumb",
+      "title": "Project 1",
+      "description": "This is a description of the project",
+      "code": "https://github.com",
+      "live": "https://github.com"
+    }, {
+        "thumbnail": "imageThumb",
+        "title": "To Do List",
+        "description": "This is a description of the project",
+        "code": "https://github.com/samsonc89/ToDo",
+        "live": "https://samsonc89.github.io/ToDo/"
+      },
+      {
+        "thumbnail": "imageThumb",
+        "title": "Restaurant Page",
+        "description": "This project was used to learn about webpack and the use of modules",
+        "code": "https://github.com/samsonc89/restaurant-page/tree/main",
+        "live": "https://samsonc89.github.io/restaurant-page/"
+      },
+      {
+        "thumbnail": "imageThumb",
+        "title": "Library",
+        "description": "This proejct was used to practice working with classes and factor functions",
+        "code": "https://github.com/samsonc89/library",
+        "live": "https://samsonc89.github.io/library/"
+      }
+  ]

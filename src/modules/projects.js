@@ -1,18 +1,12 @@
 import thumbnail from "../assets/thumbnail.png";
 import gitSVG from "../assets/github.svg";
 import liveSVG from "../assets/link.svg";
+import Data from './projects.json'
 
-let imageThumb = thumbnail;
 
-let projects = [
-  {
-    thumbnail: imageThumb,
-    title: "Project 1",
-    description: "This is a description of the project",
-    code: "https://github.com",
-    live: "https://github.com",
-  },
-];
+
+console.log(Data);
+
 
 const projectsContainer = document.querySelector("#projects-container");
 
@@ -72,6 +66,6 @@ function createProjectCard(project) {
   projectsContainer.appendChild(projectCard);
 }
 
-projects.forEach((project) => createProjectCard(project));
+Data.forEach((project) => createProjectCard(project));
 
-export { projects, createProjectCard };
+export { createProjectCard };
