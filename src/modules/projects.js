@@ -1,12 +1,20 @@
-
 import gitSVG from "../assets/github.svg";
 import liveSVG from "../assets/link.svg";
-import Data from './projects.json'
-
-
+import Data from "./projects.json";
 
 console.log(Data);
 
+function importAll(r) {
+  let assets = {};
+  r.keys().map((item, index) => {
+    assets[item.replace("./", "")] = r(item);
+  });
+  return assets;
+}
+
+const images = importAll(
+  require.context("../assets", false, /\.(png|jpe?g|svg)$/)
+);
 
 const projectsContainer = document.querySelector("#projects-container");
 
@@ -19,7 +27,7 @@ function createProjectCard(project) {
 
   const thumbnailImage = document.createElement("img");
   thumbnailImage.classList.add("thumbnail-image");
-  thumbnailImage.src = "./src/assets/"+project.thumbnail;
+  thumbnailImage.src = images[project.thumbnail];
 
   const projectTitle = document.createElement("h3");
   projectTitle.classList.add("project-title");
