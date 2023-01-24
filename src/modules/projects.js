@@ -1,4 +1,4 @@
-import thumbnail from "../assets/thumbnail.png";
+
 import gitSVG from "../assets/github.svg";
 import liveSVG from "../assets/link.svg";
 import Data from './projects.json'
@@ -19,7 +19,7 @@ function createProjectCard(project) {
 
   const thumbnailImage = document.createElement("img");
   thumbnailImage.classList.add("thumbnail-image");
-  thumbnailImage.src = project.thumbnail;
+  thumbnailImage.src = "./src/assets/"+project.thumbnail;
 
   const projectTitle = document.createElement("h3");
   projectTitle.classList.add("project-title");

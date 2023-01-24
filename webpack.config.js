@@ -24,7 +24,6 @@ module.exports = {
     port: 3030,
     open: true,
     hot: true,
-    compress: true,
     historyApiFallback: true,
   },
   module: {
