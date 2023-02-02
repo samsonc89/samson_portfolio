@@ -1,8 +1,15 @@
 [
   {
-    "thumbnail": "imageThumb",
+    "thumbnail": "weather.png",
+    "title": "Weather App",
+    "description": "This project was used to practice working with APIs, and async & await.",
+    "code": "https://github.com/samsonc89/weatherApp",
+    "live": "https://samsonc89.github.io/weatherApp/"
+  },
+  {
+    "thumbnail": "todo.png",
     "title": "To Do List",
-    "description": "This is a description of the project",
+    "description": "This project was used to practice OOP principles.",
     "code": "https://github.com/samsonc89/ToDo",
     "live": "https://samsonc89.github.io/ToDo/"
   },
@@ -19,6 +26,13 @@
     "description": "This proejct was used to practice working with classes and factor functions",
     "code": "https://github.com/samsonc89/library",
     "live": "https://samsonc89.github.io/library/"
+  },
+  {
+    "thumbnail": "tictactoe.png",
+    "title": "Tic-Tac-Toe",
+    "description": "Simple Tic-Tac-Toe game",
+    "code": "https://github.com/samsonc89/tic-tac-toe",
+    "live": "https://samsonc89.github.io/tic-tac-toe/"
   },
   {
     "thumbnail": "calculator.png",
