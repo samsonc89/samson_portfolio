@@ -1,5 +1,3 @@
-import gitSVG from "../assets/github.svg";
-import liveSVG from "../assets/link.svg";
 import Data from "./projects.json";
 
 console.log(Data);

@@ -16,28 +16,28 @@
   {
     "thumbnail": "restaurant.png",
     "title": "Restaurant Page",
-    "description": "This project was used to learn about webpack and the use of modules",
+    "description": "This project was used to learn about webpack and the use of modules.",
     "code": "https://github.com/samsonc89/restaurant-page/tree/main",
     "live": "https://samsonc89.github.io/restaurant-page/"
   },
   {
     "thumbnail": "library.png",
     "title": "Library",
-    "description": "This proejct was used to practice working with classes and factor functions",
+    "description": "This project was used to practice working with Javascript classes and factory functions.",
     "code": "https://github.com/samsonc89/library",
     "live": "https://samsonc89.github.io/library/"
   },
   {
     "thumbnail": "tictactoe.png",
     "title": "Tic-Tac-Toe",
-    "description": "Simple Tic-Tac-Toe game",
+    "description": "Simple Tic-Tac-Toe game.",
     "code": "https://github.com/samsonc89/tic-tac-toe",
     "live": "https://samsonc89.github.io/tic-tac-toe/"
   },
   {
     "thumbnail": "calculator.png",
     "title": "Calculator",
-    "description": "A simple calculator webapp",
+    "description": "A simple calculator webApp.",
     "code": "https://github.com/samsonc89/calculator",
     "live": "https://samsonc89.github.io/calculator/"
   }
