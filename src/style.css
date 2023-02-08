@@ -283,14 +283,14 @@ svg {
 }
 
 footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30px, 50px));
   height: 5vh;
-  /* background-color: green; */
+
   padding-top: 5vw;
   box-sizing: unset;
   gap: 20px;
   justify-content: center;
-  /* padding-bottom: 5vh; */
 }
 
 .footer-links {
@@ -305,7 +305,6 @@ footer {
   }
 
   footer {
-    height: 5vh;
     padding: 3vw 0 1vw 0;
   }
 }
