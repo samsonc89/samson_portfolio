@@ -11,6 +11,7 @@
 */
 * {
   margin: 0;
+  font-family: "Domine", serif;
 }
 /*
   3. Allow percentage-based heights in the application
@@ -168,12 +169,12 @@ h2 {
   content: " ";
   display: block;
   height: 90%;
-  width: 95%;
+  width: 100%;
   margin-left: -3px;
   margin-right: -3px;
   position: absolute;
   top: -1px;
-  left: -1px;
+  left: 4px;
   border-radius: 20% 25% 20% 24%;
   padding: 10px 3px 3px 10px;
 }
@@ -251,13 +252,20 @@ svg {
   width: 3vh;
 }
 
+.skills-container {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .skill-logo {
-  height: 150px;
+  height: 120px;
   width: 120px;
 }
 
 .about-me-text {
   font-size: 1.3rem;
+  margin-bottom: 2vh;
 }
 
 #go-to-top {
