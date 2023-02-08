@@ -1,4 +1,18 @@
 import "./style.css";
-// import gitIcon from "src/assets/github.svg";
+
 import { projects, createProjectCard } from "./modules/projects";
-import thumbnail from "./assets/thumbnail.png";
+
+import { toggleLocalStorageItem, toggleDarkClass } from "./modules/darkmode";
+
+const toggleBtn = document.querySelector("#toggle-btn");
+const scrollToTop = document.querySelector("#go-to-top");
+
+toggleBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  toggleLocalStorageItem();
+  toggleDarkClass();
+});
+
+scrollToTop.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});

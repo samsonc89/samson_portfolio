@@ -1,35 +1,149 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
 :root {
-  --dark-bg-color: #222020;
-  --dark-head-color: #ffffff;
-  --dark-text-color: #dedede;
+  --bg-color: #222020;
+  --project-bg-color: #2e2b2b;
+  --head-color: #ffffff;
+  --text-color: #dedede;
+  --toggle-link: url(./assets/light.svg) no-repeat;
+}
+
+:root.light {
+  --bg-color: #ffffff;
+  --project-bg-color: #f2f2f2;
+  --head-color: #000000;
+  --text-color: #000;
+  --toggle-link: url(./assets/dark.svg) no-repeat;
 }
 
 html {
   scroll-behavior: smooth;
-  background-color: var(--dark-bg-color);
+  background-color: var(--bg-color);
 }
 
-.main-wrapper {
+body {
   margin: 0 15vw;
   text-align: center;
 }
 
-.navbar {
-  position: sticky;
+nav {
+  /* position: sticky; */
   top: 0;
   display: flex;
   gap: 20px;
   align-items: center;
   height: 7vh;
   width: 100%;
-  background-color: var(--dark-bg-color);
+  background-color: var(--bg-color);
 }
 
-.navbar > button {
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--text-color);
+  /* text-decoration-color: var(--text-color); */
+}
+
+nav button {
   margin-left: auto;
+  background: var(--toggle-link);
+  border: none;
+  height: 20px;
+  width: 20px;
+}
+
+h1,
+h2,
+p {
+  color: var(--text-color);
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.section-container {
+  scroll-margin-top: 9vh;
+  min-height: 80vh;
+}
+
+.section-container > h1 {
+  font-size: 3rem;
 }
 
 #home {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,23 +155,41 @@ html {
   text-align: start;
 }
 
-h1,
-h3 {
-  text-align: center;
-  color: var(--dark-head-color);
+.highlight-container,
+.highlight {
+  position: relative;
 }
 
-h2,
-p {
-  color: var(--dark-text-color);
-}
-.section-container {
-  scroll-margin-top: 9vh;
-  min-height: 100vh;
+.highlight-container {
+  display: inline-block;
 }
 
-.section-container > h1 {
-  font-size: 3rem;
+.highlight-container:before {
+  content: " ";
+  display: block;
+  height: 90%;
+  width: 95%;
+  margin-left: -3px;
+  margin-right: -3px;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border-radius: 20% 25% 20% 24%;
+  padding: 10px 3px 3px 10px;
+}
+
+.highlight-about:before {
+  background: #1f62c097;
+  transform: rotate(3deg);
+}
+
+.highlight-work:before {
+  background: #c13636a7;
+  transform: rotate(-3deg);
+}
+
+#projects {
+  margin-bottom: 15vh;
 }
 
 #projects-container {
@@ -74,7 +206,9 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid rgb(25, 25, 25);
+  border-radius: 10px;
+  background-color: var(--project-bg-color);
 }
 
 .project-card > * {
@@ -101,10 +235,15 @@ p {
 .icon-wrapper {
   margin-top: auto;
   display: flex;
+  gap: 10px;
 }
 .git-wrapper {
   height: 3vh;
   width: 3vh;
+}
+
+svg {
+  fill: var(--text-color);
 }
 
 .live-wrapper {
@@ -112,13 +251,56 @@ p {
   width: 3vh;
 }
 
-.icon {
+.skill-logo {
+  height: 150px;
+  width: 120px;
+}
+
+.about-me-text {
+  font-size: 1.3rem;
+}
+
+#go-to-top {
+  bottom: 0;
+  right: 0;
+  margin-right: 2vw;
+  margin-bottom: 2vw;
+  position: fixed;
+  height: 4vh;
+  width: 4vh;
+  opacity: 0.2;
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+}
+
+footer {
+  display: flex;
+  height: 5vh;
+  /* background-color: green; */
+  padding-top: 5vw;
+  box-sizing: unset;
+  gap: 20px;
+  justify-content: center;
+  /* padding-bottom: 5vh; */
+}
+
+.footer-links {
   height: 100%;
-  width: 100%;
+  width: auto;
+  display: inline;
 }
 
 @media (min-width: 750px) {
   .project-thumbnail {
     height: 250px;
+  }
+
+  footer {
+    height: 5vh;
+    padding: 3vw 0 1vw 0;
+  }
+  .footer-links {
+    height: 100%;
+    width: auto;
   }
 }
