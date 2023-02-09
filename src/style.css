@@ -104,6 +104,7 @@ nav {
   height: 7vh;
   width: 100%;
   background-color: var(--bg-color);
+  font-weight: bolder;
 }
 
 a {
