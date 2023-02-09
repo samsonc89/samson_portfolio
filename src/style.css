@@ -258,11 +258,14 @@ svg {
   margin-top: 10vh;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .skill-logo {
-  height: 120px;
-  width: 120px;
+  height: 10vh;
+  width: 10vh;
+  margin: 10px 15px;
 }
 
 .about-me-text {
@@ -284,10 +287,7 @@ svg {
 }
 
 footer {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30px, 50px)); */
   height: 5vh;
-
   padding-top: 5vw;
   box-sizing: unset;
   gap: 20px;
@@ -306,6 +306,10 @@ footer {
     height: 250px;
   }
 
+  .skill-logo {
+    height: 15vh;
+    width: 15vh;
+  }
   footer {
     padding: 3vw 0 1vw 0;
   }
