@@ -1,7 +1,5 @@
 import Data from "./projects.json";
 
-console.log(Data);
-
 function importAll(r) {
   let assets = {};
   r.keys().map((item, index) => {
