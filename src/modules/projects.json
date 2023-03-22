@@ -1,5 +1,12 @@
 [
   {
+    "thumbnail": "react-landing-page.png",
+    "title": "React Landing Page",
+    "description": "This project was used to practice working building out a page with React",
+    "code": "https://github.com/samsonc89/react-landing-page",
+    "live": "https://samsonc89.github.io/react-landing-page/"
+  },
+  {
     "thumbnail": "weather.png",
     "title": "Weather App",
     "description": "This project was used to practice working with APIs, and async & await.",
