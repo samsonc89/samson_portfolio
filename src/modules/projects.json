@@ -1,8 +1,15 @@
 [
   {
+    "thumbnail": "benefits.png",
+    "title": "Credit Card Benefits Tracker",
+    "description": "This project was built with React to let credit card churners keep track of their unused benefits.",
+    "code": "https://github.com/samsonc89/cc-benefits-tracker",
+    "live": "https://samsonc89.github.io/cc-benefits-tracker/"
+  },
+  {
     "thumbnail": "react-landing-page.png",
     "title": "React Landing Page",
-    "description": "This project was used to practice working building out a page with React",
+    "description": "This project was used to practice working building out a page with React.",
     "code": "https://github.com/samsonc89/react-landing-page",
     "live": "https://samsonc89.github.io/react-landing-page/"
   },
